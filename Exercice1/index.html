@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="container">
+        <h1>Calculatrice</h1>
+        <div id="calculator">
+            <form>
+                <p>Quelle etait la valeur de votre facture?</p>
+                $ <input id="billamt" type="text" placeholder="Montant de la facture">
+
+                <p>comment s'est déroulé votre service?</p>
+                <select id="serviceQual">
+                    <option disabled selected value="0">-- Choisir une option --</option>
+                    <option value="0.3">30&#37; &#45; remarquable</option>
+                    <option value="0.2">20&#37; &#45; Bon</option>
+                    <option value="0.15">15&#37; &#45; C'était ok</option>
+                    <option value="0.1">10&#37; &#45; Mal</option>
+                    <option value="0.05">5&#37; &#45; terrible</option>
+                </select>
+            </form>
+
+            <p>Combien de personnes partagent le projet de loi?</p>
+            <input id="peopleamt" type="text" placeholder="Nombre de personnes"> personnes
+            <button type="button" id="calculate">Calculer!</button>
+
+        </div>
+        <!-- Fin du calculatrice -->
+
+        <div id="totalTip">
+            <sup>$</sup><span id="tip"></span>
+            <small id="each">each</small>
+        </div>
+        <!--totalTip fin-->
+
+    </div>
+    <!--container fin-->
+
+    <script src="script.js"></script>
+</body>
+
+</html>
